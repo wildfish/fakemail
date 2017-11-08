@@ -10,6 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-RUN git clone git@github.com:wildfish/fakemail.git /app
+RUN git clone https://github.com/wildfish/fakemail.git /app
 
 CMD ["python", "/app/server.py"]
