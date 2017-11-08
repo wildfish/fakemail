@@ -21,5 +21,8 @@ class DebuggyServer(smtpd.SMTPServer):
 
 
 if __name__ == '__main__':
+    print('---------- FAKEMAIL ----------')
+    print('Starting fakemail on 127.0.0.1:2525')
+    print('')
     server = DebuggyServer(('127.0.0.1', 2525), None)
     asyncore.loop()
